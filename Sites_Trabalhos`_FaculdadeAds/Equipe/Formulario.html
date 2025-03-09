@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- colocar essas metas em todos sites html -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Esse é o Site de Jean!"> 
+    <meta name="keywords" content="site, jean, programação, javascript, java, c, css, phyton"> 
+    <meta name="author" content="Vr2_martins, Jean">
+    <title>Formulario</title>
+</head>
+<body style="background-color: rgb(81, 127, 212);">
+
+    <h1>Formulario Aqui</h1>
+<!-- o input do tipo "text" é esse campo aonde você pode digitar um texto -->
+ <b>O input do tipo "text" é esse campo aonde você pode digitar um texto.</b> Ele se escreve assim <b>"< form> < input type="text"> < /form>"
+<br>
+a tag "for" ela indica que a tag "id" tem um nome.</b>
+ </b><br> A TAG  INPUT  NAO TEM FECHAMENTO. <BR>
+    <br>
+  O <b>"placeholder"</b>, é como se fosse uma marca dentro da caixinha.<br>
+  <br>
+  A Tag <b>"Label"</b> é uma palavra antes da caixinha.<br>
+  <br> 
+A Tag <b>"ID"</b>, é como se voce estivesse identificando um nome para a caixihha que você criou.<br>
+<br>
+ A Tag <b>"Input"</b> com o <b>"Type" "Password"</b> ele é do tipo de senha.
+ <br>
+ <br>
+ A Tag <b>"Input"</b> com o <b>"Type" "email"</b> ele é do tipo de E-mail. <br>
+ <br> 
+ A Tag <b>"Input"</b> com o <b>"Type" "submit"</b> ele é do tipo de que cria um botaozinho para enviar o formulario, exemplo <b> "< input type="submit" value="Enviar Formulario">" </b>. <br>
+ <br>
+ A Tag <b> "required" </b> faz com que não deixe o formulario ser enviado vazio.
+ <br><br>
+ A tag <b>"radio"</b> faz a opção de bolinha para selecionar a opção. (lista de compras por exemplo) 
+ <br><br>
+    <form>
+        <!-- legenda para nome -->
+        <label for="campo_nome">Nome:</label>
+        <!-- campo type do tipo "text" -->
+        <input id="campo_nome" 
+        type="text"placeholder="Digite seu nome Aqui" required>
+        <!-- placeholder para marca dagua -->
+        <br><br>
+
+        <!--legenda para sobrenome  -->
+        <label for="campo_sobrenome">Sobrenome:</label>
+        <input id="campo_sobrenome" type="text"placeholder="Digite seu Sobrenome Aqui" required> 
+        <br><br>
+        <!-- legenda para e-mail -->
+        <label for="campo_email">E-mail:</label>
+        <!-- campo input do type "email" -->
+        <input id="campo_email" type="email"placeholder="Digite seu E-mail Aqui" required>
+        <br><br>
+
+        <!-- legenda para senha -->
+        <label for="campo_senha">Senha:</label>
+        <!-- camppo input do type "password" -->
+        <input id="campo_senha" type="password"placeholder="Digite sua Senha Aqui" required>
+        <br><br>
+
+    <!-- campo para criar botão, type "submit" -->
+        <input type="submit" value="Enviar Formulario">
+        <br><br>
+
+        <!--legenda para modelo input de modelo "radio"  -->
+        <!-- radio faz a opção de bolinha para seecionar -->
+        <h2>Animal de Estimção</h2>
+
+        <input type="radio" id="dog" name="animal" value="cachorro">
+        <label for="dog">Cachorro</label> 
+
+        <br><br>
+        <!-- o "for" sempre acompaha o "id", o mesmo que estiver dentro de um tem que estar no outro -->
+
+        <input type="radio" id="cat" name="animal" value="Gato">
+        <label for="cat">Gato</label>
+
+        <br><br>
+
+        <input type="radio" id="bird" name="animal" value="Passarinho">
+        <label for="bird">Passarinho</label>
+
+        <br><br>
+
+
+        <input type="submit"value="Enviar Formulario">
+
+        <br><br>
+
+        O type<b> "radio" </b>, ele te da a oçpão de escolher uma das coisas que esta listada.<br><br>
+        o <b> "name" </b> é o mesmo para os tres(cachorro, gato e passsarinho) por isso ele só deixa você escolher uma opção.<br><br>
+        só oque troca é o  <b>"value</b>, que seria os nome (dog, cat e bird, coloquei em ingles para diferenciar).
+        o type <b>"radia</b> tem que ter o <b>"name"</b> junto com ele escrito a mesma coisa em todas as opçoes que voce for fazer, como a minha por exemplo é <b>"animal</b>, esta nas três opções. <br><br>
+        o <b>"label"</b> é a mensagem que vai aparecer na frente da opção que voce poderar escolher, o <b>"for"</b> esta junto porque se a pessoa clicar no nome, tambem vai ser 'indicado' que escolheu aquela opção, por isso o <b>"for"</b> é o mesmo do <b>"id"</b>.
+<hr>
+            <br>
+            O input com o type <b> "Checkbox" </b> ele da a opção de multipla escolha, você pode escolher mais de 1. <br> <br> 
+            <h2>O que você tem em casa?</h2> 
+    <!-- input com checkbox -->
+            <input required  id="item1"type="checkbox"name="item"value="TV">
+            <label for="item1">TV</label>
+            <br>
+            <input id="item2" type="checkbox" name="item2" value="Computador">
+            <label for="item2">Computador</label>
+            <br>
+            <input id="item3" type="checkbox" name="item3"value="Tablet">
+            <label for="item3">Tablet</label>
+            <br>
+        <input type="submit" value="Enviar Formulario">
+
+    </form> <br>
+ <br>
+   
+<hr>
+
+    <h2>Escolha uma cor</h2>
+<!-- o select é uma opão de multiplha escolha em uma unica opção -->
+O select é uma opão de multiplha escolha em uma unica opção. Exemplo: <br><b> < select>< option value="vermelho">vermelho< /option>
+ < /select> </b><br><br>
+ Esse <b> "selected disabled" </b> faz com que aparece a mensagem escrita antes de aparecer a opção para escolher.<br>
+    <br><br>
+<!-- esse "selected disabled" faz com que aparece a mensagem escrita antes de aparecer a opção para escolher -->
+        <select required name="cores">
+            <option selected disabled value="Selecione uma cor">Selecione uma Cor </option>
+            <option value="vermelho">vermelho</option>
+            <option value="azul">azul</option>
+            <option value="amarelo">amarelo</option>
+            <option value="verde">verde</option>
+        </select>
+
+    <br><br>
+     <input type="submit" value="Enviar Formulario">
+
+        <br><br>
+<hr>
+        <h2>Digite sua Mensagem:</h2>
+        <p> a Tag <b> "Textarea" </b> é para fazer um capo aonde o usuario pode escrever.</p> 
+        a Tag que esta acompanhando é <b> "rows" </b> que significa linhas. <br><br>
+        a Tag que esta acompanhando tambem é <b> "cols" </b> que significa colunas. <br><br>
+        a Tag que esta acompanhando tambem é <b> "placeholder" </b> que é a marca dagua no campo de texto.
+        <br><br>
+        Exemplo: <b> < textarea name="mensagem" placeholder="Digite sua Mensagem Aqui:" rows="5" cols="50" >< /textarea> </b>
+        <br><br>
+        <!-- textarea é para fazer um capo aonde o usuario pode escrever -->
+
+        <!-- o text area é ultilizado para compo de mensagem mais longas, o input é para campo de mensagens curtas -->
+        <!-- placeholder é a marca dagua -->
+<textarea required name="mensagem" placeholder="Digite sua Mensagem Aqui:" rows="5" cols="50" ></textarea> <br><br>
+
+<input type="submit" value="Enviar Formulario">
+<br><br>
+    O <b> "Textarea" </b> é ultilizado para compo de mensagem mais longas, o <b> "Input" </b> é para campo de mensagens curtas.
+    <hr>
+    <br><br>
+    <!-- tag botão, cria um botão -->
+    <h5>Tag Button</h5>
+    A Tag <b>"button"</b> ela cria um botao que inicialmente nao tem função, se estiver dentro do paragrafo do <b>"< form> < /form>" </b> ele funciona para enviar o formulario. Mas tambm pode ser ultilizado fora do paragrafo do formulario. <br><br>
+
+    <button>Click Aqui</button>
+
+    <br><br>
+
+    <a href="../Sites.html"target="_blank">Click Aqui</a> Para Voltar Para o Site Principal.
+
+</body>
+</html>
